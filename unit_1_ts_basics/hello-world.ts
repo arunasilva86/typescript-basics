@@ -8,7 +8,7 @@ var myArray : number [];
 myArray = [1, 2, 3];
 myArray.push(10);
 
-var x: number;
+var x: number | undefined;
 x = myArray.pop();
 
 
@@ -32,15 +32,15 @@ console.log(sum);
 
 ///////////////////////////// Number of arguments matters in TS
 
-var substract = (s1, s2) => s1 - s2;
+var substract = (s1 : number , s2: number ) => s1 - s2;
 console.log(add(5, 2));     // add(5, 2, 6) gives TS error 
 
 ///////////////////////////// Optional Arguments
-var func3 = (a, b, c?, d?) => a + b + c + d;     // c and d optional with no default values , should be at thje very end
+var func3 = (a: number , b: number , c ? : number , d ? : number ) => a + b;     // c and d optional with no default values , should be at thje very end
 
-var func4 = (a, b, c = 0, d?) => a + b + c ;     // c and d optional but c takes 0 if not provided, d is optional but remain undefined if not provided, should be at thje very end
+var func4 = (a: number , b: number , c = 0, d ? : number ) => a + b + c ;     // c and d optional but c takes 0 if not provided, d is optional but remain undefined if not provided, should be at thje very end
 
-var func5 = (a, b, c = 0, d: number = 0) => a + b + c ;     // c and d optional but with takes 0 if not provided, d is optional , but if provides it should be a number but remain undefined if not provided, should be at thje very end
+var func5 = (a: number , b: number , c = 0, d: number = 0) => a + b + c ;     // c and d optional but with takes 0 if not provided, d is optional , but if provides it should be a number but remain undefined if not provided, should be at thje very end
 
 
 ///////////////////////////// function return type type safty

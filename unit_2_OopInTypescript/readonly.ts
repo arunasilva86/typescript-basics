@@ -12,7 +12,7 @@ class ReadonlyDemo2 { // can be initialize inside the cobstructor
     readonly x: string;
     readonly y: number;
 
-    constructor (x, y) {
+    constructor (x: string, y: number) {
         this.x = x;
         this.y = y;
     }
