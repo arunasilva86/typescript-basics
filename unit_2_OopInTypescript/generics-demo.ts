@@ -1,5 +1,5 @@
-import {Person} from './inheritance-demo';
-import {Programmer} from './inheritance-demo';
+import {Person} from "./common/models";
+import { Programmer } from "./common/models";
 
 Programmer
 
