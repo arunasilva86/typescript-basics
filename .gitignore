@@ -11,6 +11,7 @@ node_modules/
 # Output directories
 dist/
 build/
+out/
 
 # Optional: Ignore other specific files or directories
 .env
