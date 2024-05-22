@@ -1,9 +1,17 @@
 // Inheritance | polimophism| Encapsulation|
 
-class Person {
+export class Person {
 
     constructor (private firstName : string, private lastName : string) { // Encapsulation in action, No class attribute declaration  and assignment inside constructor required in this way. This is possible as TS allowed only a songle constructor.
 
+    }
+
+    public getFirstName () {
+        return this.firstName;
+    }
+
+    public getLastName () {
+        return this.lastName;
     }
 
     protected greet (){
@@ -12,7 +20,7 @@ class Person {
 }
 
 
-class Programmer extends Person {
+export class Programmer extends Person {
     greet() {
         console.log("Hi from Programmer ");
     }
