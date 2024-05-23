@@ -1,0 +1,12 @@
+{
+  "name": "typescript-basics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node out/unit-2-oop-in-ts/class-demo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aruna",
+  "license": "ISC",
+  "description": ""
+}
