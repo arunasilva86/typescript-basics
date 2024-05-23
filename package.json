@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "loadsh": "^0.0.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.4"
   }
 }

@@ -1,5 +1,5 @@
-import {Person} from "./common/models";
-import { Programmer } from "./common/models";
+import {Person} from "../common/models";
+import { Programmer } from "../common/models";
 
 Programmer
 
